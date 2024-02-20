@@ -88,6 +88,22 @@
     padding-right: 2px;
 }
 
+.work {
+    display: flex;
+    flex-direction: row; /* Display items in a row */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 20px;
+    background-color: var(--primary-color);
+ }
+ 
+ .work h2 {
+    margin-right: 20px; /* Adjust spacing between h2 and img */
+ }
+ 
+ .work img {
+    order: 1; /* Specify the order of the img */
+ }
+
 /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
 @media screen and (min-width: 768px) {
 

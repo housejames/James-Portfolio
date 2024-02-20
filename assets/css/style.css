@@ -1,0 +1,79 @@
+/* Take glow effect from CSS snippet cheat */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: ;
+    color: ;
+    display: inline-block;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+.header nav ul li {
+    display: inline-block;
+}
+
+.james {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/James\ gif.gif");
+    background-size: cover;
+    background-position: center;
+}
+
+.text-box {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Adjust opacity as needed */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.text-box p {
+    margin: 0;
+}
+
+/* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+@media screen and (min-width: 768px) {
+
+    /* on tablets, set columns to only be 50% of the width and not grow */
+    .card-column {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    /* select the last child to grow to full width if it has space to grow */
+    .card-column:last-child {
+        flex-grow: 1;
+    }
+}
+
+/* media query for larger screens */
+@media screen and (min-width: 992px) {
+    header {
+        width: 75%;
+    }
+
+    .card-column {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+    }
+}

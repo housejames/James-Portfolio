@@ -1,4 +1,10 @@
 /* Take glow effect from CSS snippet cheat */
+:root {
+--primary-color:
+--secondary-color:
+--
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -17,6 +23,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: 25px;
 }
 
 .header h1 {
@@ -43,7 +50,7 @@
     right: 0;
     background-color: rgba(255, 255, 255, 0.7);
     /* Adjust opacity as needed */
-    padding: 10px;
+    padding: 30px;
     border-radius: 5px;
 }
 

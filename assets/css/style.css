@@ -1,25 +1,20 @@
-/* Take glow effect from CSS snippet cheat */
 :root {
-    /* --primary-color: #FFFCE3; */
-    /* --secondary-color: #e3e6ff; */
-    --accent: ;
+    --secondary-color: #e3e6ff;
 }
-/* FFFCE3 keeping these incase i like the color (tan and pink) */
-/* e3e6ff */
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     background-color: var(--secondary-color);
-    font-family: Georgia, 'Times New Roman', Times, serif
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+/* Header Section */
 
 .header {
     padding: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    /* background-color: var(--primary-color); */
-    color: var();
     display: inline-block;
 }
 
@@ -27,7 +22,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* margin-left: 25px; */
+    margin-left: 25px;
     font-size: 30px;
     padding-right: 50px;
 }
@@ -41,6 +36,7 @@
     display: inline-block;
     padding-right: 10px;
 }
+
 
 /* Main Section */
 
@@ -88,49 +84,60 @@
     margin-right: 50px;
     margin-left: 50px;
     /* Adjust spacing between h2 and p */
-    /* background-color: var(--primary-color); */
     border-right: 2px solid black;
-    padding-right: 2px;
+    padding-right: 10px;
+    font-size: 40px;
 }
 
 /* Work Content Section */
 
 .work {
     display: flex;
-    flex-direction: column; /* Display items in a column */
-    align-items: flex-start; /* Align items to the left */
+    flex-direction: column;
+    /* Display items in a column */
+    align-items: flex-start;
+    /* Align items to the left */
     margin-bottom: 20px;
     background-color: var(--primary-color);
 }
 
 .work-content {
-    display: flex; /* Use flexbox for positioning */
-    align-items: center; /* Center items vertically */
+    display: flex;
+    /* Use flexbox for positioning */
+    align-items: center;
+    /* Center items vertically */
 }
 
 .work h2 {
-    margin-right: 20px; /* Add right margin for spacing */
-    margin-bottom: 0; /* Remove bottom margin */
+    margin-right: 20px;
+    /* Add right margin for spacing */
+    margin-bottom: 0;
+    /* Remove bottom margin */
 }
 
 .work img {
-    max-width: 100%; /* Ensure image doesn't overflow */
+    max-width: 100%;
+    /* Ensure image doesn't overflow */
 }
 
 .work a {
-    display: block; /* Make anchor a block-level element */
+    display: block;
+    /* Make anchor a block-level element */
 }
 
 .image-container {
-    position: relative; /* Positioning context for absolute positioning */
-    max-width: 100%; /* Ensure image doesn't overflow */
+    position: relative;
+    /* Positioning context for absolute positioning */
+    max-width: 100%;
+    /* Ensure image doesn't overflow */
 }
 
 .image-overlay {
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: rgba(255, 255, 255, 0.7); /* Adjust opacity as needed */
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Adjust opacity as needed */
     padding: 50px;
 }
 
@@ -146,45 +153,47 @@
 .glow:hover {
     filter: brightness(120%);
 }
+
 /* Contact Me Section */
 
 .contact-me {
     display: flex;
-    align-items: center; /* Align items vertically */
+    align-items: center;
+    /* Align items vertically */
 }
 
 .contact-me h2 {
-    margin-right: 10px; /* Add right margin for spacing */
-    margin-bottom: 0; /* Remove bottom margin */
+    margin-right: 10px;
+    /* Add right margin for spacing */
+    margin-bottom: 0;
+    /* Remove bottom margin */
 }
 
 .contact-links {
-    display: flex;
+    display: center;
 }
 
 .contact-links a {
-    margin-right: 10px; /* Add right margin between links */
-    text-decoration: none; /* Remove underline from links */
-    color: inherit; /* Inherit text color from parent */
+    margin-right: 10px;
+    /* Add right margin between links */
+    color: inherit;
+    /* Inherit text color from parent */
 }
 
 
-/* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
-@media screen and (min-width: 768px) {
+/* Media Queries */
 
-    /* on tablets, set columns to only be 50% of the width and not grow */
+@media screen and (min-width: 768px) {
     .card-column {
         flex: 0 0 50%;
         max-width: 50%;
     }
 
-    /* select the last child to grow to full width if it has space to grow */
     .card-column:last-child {
         flex-grow: 1;
     }
 }
 
-/* media query for larger screens */
 @media screen and (min-width: 992px) {
     header {
         width: 100%;

@@ -1,21 +1,23 @@
 /* Take glow effect from CSS snippet cheat */
 :root {
-    --primary-color: #FFFCE3;
-    --secondary-color: #e3e6ff;
+    /* --primary-color: #FFFCE3; */
+    /* --secondary-color: #e3e6ff; */
     --accent: ;
 }
+/* FFFCE3 keeping these incase i like the color (tan and pink) */
+/* e3e6ff */
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     background-color: var(--secondary-color);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif
 }
 
 .header {
     padding: 30px;
-    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     /* background-color: var(--primary-color); */
     color: var();
     display: inline-block;
@@ -40,8 +42,10 @@
     padding-right: 10px;
 }
 
+/* Main Section */
+
 .james {
-    height: 1000px;
+    height: 1200px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("../images/James\ gif.gif");
@@ -88,21 +92,56 @@
     padding-right: 2px;
 }
 
+/* Work Content Section */
+
 .work {
     display: flex;
-    flex-direction: row; /* Display items in a row */
-    align-items: center; /* Center items vertically */
+    flex-direction: column; /* Display items in a column */
+    align-items: flex-start; /* Align items to the left */
     margin-bottom: 20px;
     background-color: var(--primary-color);
- }
- 
- .work h2 {
-    margin-right: 20px; /* Adjust spacing between h2 and img */
- }
- 
- .work img {
-    order: 1; /* Specify the order of the img */
- }
+}
+
+.work-content {
+    display: flex; /* Use flexbox for positioning */
+    align-items: center; /* Center items vertically */
+}
+
+.work h2 {
+    margin-right: 20px; /* Add right margin for spacing */
+    margin-bottom: 0; /* Remove bottom margin */
+}
+
+.work img {
+    max-width: 100%; /* Ensure image doesn't overflow */
+}
+
+.work a {
+    display: block; /* Make anchor a block-level element */
+}
+
+/* Contact Me Section */
+
+.contact-me {
+    display: flex;
+    flex-direction: column; /* Display items in a column */
+}
+
+.contact-me h2 {
+    margin-bottom: 10px; /* Add bottom margin for spacing */
+}
+
+.contact-links {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly */
+    align-items: center; /* Center items vertically */
+}
+
+.contact-links a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit text color from parent */
+}
+
 
 /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
 @media screen and (min-width: 768px) {

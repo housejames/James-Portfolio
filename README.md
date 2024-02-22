@@ -24,7 +24,7 @@ The House of Code is my personal portfolio website, designed to highlight my ski
 
 Github repo: https://github.com/housejames/James-Portfolio
 
-Deployed site: 
+Deployed site: https://housejames.github.io/James-Portfolio/
 
 ![Image of site](./assets/images/_Users_james_code-uci_james-portfolio_index.html.png)
 

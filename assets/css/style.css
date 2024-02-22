@@ -85,10 +85,11 @@
 .work h2,
 .contact-me h2,
 .resume h2 {
-    margin-right: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
     /* Adjust spacing between h2 and p */
     /* background-color: var(--primary-color); */
-    border-right: 2px solid white;
+    border-right: 2px solid black;
     padding-right: 2px;
 }
 
@@ -120,24 +121,49 @@
     display: block; /* Make anchor a block-level element */
 }
 
+.image-container {
+    position: relative; /* Positioning context for absolute positioning */
+    max-width: 100%; /* Ensure image doesn't overflow */
+}
+
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.7); /* Adjust opacity as needed */
+    padding: 50px;
+}
+
+.image-overlay p {
+    margin: 0;
+}
+
+/* Add glow effect on hover */
+.glow {
+    transition: filter 0.5s ease-in-out;
+}
+
+.glow:hover {
+    filter: brightness(120%);
+}
 /* Contact Me Section */
 
 .contact-me {
     display: flex;
-    flex-direction: column; /* Display items in a column */
+    align-items: center; /* Align items vertically */
 }
 
 .contact-me h2 {
-    margin-bottom: 10px; /* Add bottom margin for spacing */
+    margin-right: 10px; /* Add right margin for spacing */
+    margin-bottom: 0; /* Remove bottom margin */
 }
 
 .contact-links {
     display: flex;
-    justify-content: space-between; /* Distribute items evenly */
-    align-items: center; /* Center items vertically */
 }
 
 .contact-links a {
+    margin-right: 10px; /* Add right margin between links */
     text-decoration: none; /* Remove underline from links */
     color: inherit; /* Inherit text color from parent */
 }
